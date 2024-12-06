@@ -1,0 +1,18 @@
+main:
+addi $t0, $t0, 10
+addi $t1, $t1, 15
+add $t2, $t0, $t1
+sub $t3, $t1, $t0
+addi $t4, $zero, 20
+subi $sp, $t4, 5
+and $t2, $t0, $t1
+andi $t3, $t1, 3
+or $t4, $t0, $sp
+ori $sp, $t4, 1
+sll $t2, $sp, 2
+srl $t3, $t4, 1
+nor $t0, $t3, $t2
+sw $t0, 0($sp)
+lw $t4, 0($sp)
+j main
+
